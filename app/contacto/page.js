@@ -1,9 +1,9 @@
 import ContactForm from '@/components/ui/ContactForm';
 
 export const metadata = {
-  title: 'Contacto — Solicita tu análisis gratuito',
+  title: 'Contacto y Estudio de Factura de Luz Gratis | Activa',
   description:
-    'Contacta con Activa Asesores. Adjunta tu factura de luz o gas y te haremos un análisis gratuito para que sepas exactamente cuánto puedes ahorrar.',
+    'Solicita tu estudio energético 100% gratuito. Envíanos tu factura de luz o llámanos para descubrir cuánto puedes ahorrar hoy. ¡Sin compromiso!',
 };
 
 const PhoneIcon = () => (
@@ -39,9 +39,9 @@ const contactDetails = [
     icon: <PhoneIcon />,
     color: 'bg-brand-50 text-brand-600',
     label: 'Teléfono',
-    value: '900 000 000',
+    value: '854 615 199',
     sub: 'Llamada gratuita',
-    href: 'tel:+34900000000',
+    href: 'tel:+34854615199',
   },
   {
     icon: <MailIcon />,
@@ -55,7 +55,7 @@ const contactDetails = [
     icon: <ClockIcon />,
     color: 'bg-violet-50 text-violet-600',
     label: 'Horario',
-    value: 'Lun–Vie: 9:00–18:00',
+    value: 'Lunes - Viernes: 8:00–20:00',
     sub: 'Atención personalizada',
   },
 ];
@@ -71,14 +71,16 @@ export default function ContactoPage() {
   return (
     <>
       {/* Header */}
-      <section className="gradient-bg pt-32 pb-16 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto text-center max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-3.5 py-1.5 rounded-full mb-6">
+      <section className="relative overflow-hidden gradient-bg pt-36 pb-20 px-4 md:px-8">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-brand-500/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent-400/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-2xl mx-auto text-center relative z-10">
+          <div className="section-tag-accent mb-6 mx-auto">
             <ZapIcon />
             Análisis gratuito
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-neutral-900 leading-tight mb-5">
-            Cuéntanos tu situación.<br />
+          <h1 className="text-[56px] md:text-[72px] font-extrabold text-neutral-900 leading-[1.08] tracking-tight mb-6">
+            Cuéntanos tu situación.<br className="hidden sm:inline" />
             <span className="text-gradient">Nosotros te respondemos.</span>
           </h1>
           <p className="text-xl text-neutral-500 leading-relaxed">
@@ -90,9 +92,9 @@ export default function ContactoPage() {
       {/* Main content */}
       <section className="py-16 px-4 md:px-8 bg-neutral-50">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-5 gap-10">
+          <div className="flex flex-col lg:grid lg:grid-cols-5 gap-10">
             {/* Sidebar */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="order-2 lg:order-1 lg:col-span-2 space-y-6">
               {/* Contact details */}
               <div className="bg-white rounded-3xl border border-neutral-100 shadow-soft p-7">
                 <h2 className="font-bold text-neutral-900 mb-5">Datos de contacto</h2>
@@ -120,10 +122,10 @@ export default function ContactoPage() {
 
               {/* Promises */}
               <div className="bg-gradient-to-br from-brand-600 to-brand-700 rounded-3xl p-7 text-white shadow-glow">
-                <h3 className="font-bold text-lg mb-4">Nuestro compromiso contigo</h3>
+                <h3 className="font-bold text-lg mb-4 text-white">Nuestro compromiso contigo</h3>
                 <ul className="space-y-3">
                   {promises.map(p => (
-                    <li key={p} className="flex items-start gap-2.5 text-sm text-brand-100">
+                    <li key={p} className="flex items-start gap-2.5 text-sm text-white">
                       <span className="mt-0.5 shrink-0 text-brand-300"><CheckIcon /></span>
                       {p}
                     </li>
@@ -138,8 +140,8 @@ export default function ContactoPage() {
             </div>
 
             {/* Form */}
-            <div className="lg:col-span-3">
-              <div className="bg-white rounded-3xl border border-neutral-100 shadow-soft p-8">
+            <div className="order-1 lg:order-2 lg:col-span-3">
+              <div className="bg-white rounded-3xl border border-neutral-100 shadow-soft p-6 sm:p-8">
                 <div className="mb-7">
                   <h2 className="text-2xl font-bold text-neutral-900">Solicita tu análisis</h2>
                   <p className="text-sm text-neutral-500 mt-1.5">

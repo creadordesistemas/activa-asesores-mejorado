@@ -7,15 +7,15 @@ export const metadata = {
 
 export default function PoliticaPrivacidadPage() {
   return (
-    <LegalLayout title="Política de Privacidad" lastUpdated="enero de 2024">
+    <LegalLayout title="Política de Privacidad" lastUpdated="mayo de 2025">
       <p>
         En Activa Asesores nos tomamos muy en serio la privacidad de nuestros clientes y usuarios. Esta política describe cómo recogemos, usamos y protegemos tus datos personales de acuerdo con el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD).
       </p>
 
       <h2>1. Responsable del tratamiento</h2>
       <ul>
-        <li><strong>Responsable:</strong> Activa Asesores S.L.</li>
-        <li><strong>CIF:</strong> B-XXXXXXXX</li>
+        <li><strong>Responsable:</strong> Activa Asesores, S.L.</li>
+        <li><strong>CIF:</strong> B75810804</li>
         <li><strong>Contacto DPO:</strong> privacidad@activaasesores.com</li>
       </ul>
 

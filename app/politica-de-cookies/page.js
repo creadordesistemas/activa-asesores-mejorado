@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function PoliticaCookiesPage() {
   return (
-    <LegalLayout title="Política de Cookies" lastUpdated="enero de 2024">
+    <LegalLayout title="Política de Cookies" lastUpdated="mayo de 2025">
       <p>
         Esta política explica qué son las cookies, qué tipos utilizamos en activaasesores.com y cómo puedes gestionarlas. Cumplimos con la Ley 34/2002 (LSSICE) y el RGPD.
       </p>

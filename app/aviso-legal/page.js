@@ -7,17 +7,17 @@ export const metadata = {
 
 export default function AvisoLegalPage() {
   return (
-    <LegalLayout title="Aviso Legal" lastUpdated="enero de 2024">
+    <LegalLayout title="Aviso Legal" lastUpdated="mayo de 2025">
       <h2>1. Datos identificativos del titular</h2>
       <p>
         En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE), se facilitan los siguientes datos identificativos:
       </p>
       <ul>
-        <li><strong>Denominación social:</strong> Activa Asesores S.L.</li>
-        <li><strong>CIF:</strong> B-XXXXXXXX</li>
-        <li><strong>Domicilio social:</strong> España</li>
+        <li><strong>Denominación social:</strong> Activa Asesores, S.L.</li>
+        <li><strong>CIF:</strong> B75810804</li>
+        <li><strong>Domicilio social:</strong> Avenida San Francisco Javier 9, stn 7</li>
         <li><strong>Correo electrónico:</strong> info@activaasesores.com</li>
-        <li><strong>Teléfono:</strong> 900 000 000</li>
+        <li><strong>Teléfono:</strong> 854 615 199</li>
         <li><strong>Web:</strong> www.activaasesores.com</li>
       </ul>
 

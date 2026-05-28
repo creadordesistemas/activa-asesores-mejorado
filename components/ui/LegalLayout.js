@@ -3,7 +3,7 @@ export default function LegalLayout({ title, lastUpdated, children }) {
     <>
       <section className="gradient-bg pt-32 pb-10 px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
-          <div className="inline-block text-xs font-semibold text-neutral-500 bg-white border border-neutral-200 px-3 py-1.5 rounded-full mb-4">
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-brand-50 border border-brand-100 px-3.5 py-1.5 rounded-full mb-4">
             Información legal
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-3">{title}</h1>

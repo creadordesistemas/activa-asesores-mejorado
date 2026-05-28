@@ -1,0 +1,69 @@
+# robots.txt — Activa Asesores
+# https://activaasesores.com
+
+# ── Rastreadores estándar ──────────────────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# ── Google (incluido Google-Extended para modelos de IA generativa) ────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# ── OpenAI / ChatGPT ──────────────────────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# ── Anthropic / Claude ────────────────────────────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ── Perplexity AI ─────────────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# ── Meta AI ───────────────────────────────────────────────────────────────────
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# ── Apple ─────────────────────────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Microsoft / Bing AI ───────────────────────────────────────────────────────
+User-agent: bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# ── Otros agentes de IA ───────────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# ── Archivo de descripción para LLMs ──────────────────────────────────────────
+# Especificación de servicios disponible en: /llms.txt
+
+Sitemap: https://activaasesores.com/sitemap.xml

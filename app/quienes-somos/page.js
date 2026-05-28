@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Quiénes somos — El equipo detrás de Activa Asesores',
+  title: 'Asesores Energéticos Independientes | Activa Asesores',
   description:
-    'Conoce al equipo de Activa Asesores, nuestra misión de hacer la energía más sencilla y nuestra forma de trabajar: transparente, cercana y siempre del lado del cliente.',
+    'Conoce al equipo independiente de Activa Asesores. Nuestra misión es simplificar la energía y ayudarte a pagar lo mínimo, de forma transparente.',
 };
 
 const ZapIcon = ({ size = 22 }) => (
@@ -70,45 +70,23 @@ const values = [
   },
 ];
 
-const team = [
-  {
-    initials: 'MR',
-    name: 'Miguel Rodríguez',
-    role: 'Fundador & Director',
-    desc: 'Más de 10 años en el sector energético. Empezó Activa Asesores con la misión de democratizar el acceso a una gestión energética de calidad.',
-    gradient: 'from-brand-400 to-brand-600',
-  },
-  {
-    initials: 'AL',
-    name: 'Ana López',
-    role: 'Responsable de operaciones',
-    desc: 'Especialista en procesos regulatorios y relaciones con distribuidoras. Garantiza que cada trámite se resuelva en tiempo y forma.',
-    gradient: 'from-electric-400 to-electric-600',
-  },
-  {
-    initials: 'PC',
-    name: 'Pablo Cuenca',
-    role: 'Asesor energético senior',
-    desc: 'Técnico en eficiencia energética. Diseña los estudios de ahorro y asegura que cada cliente pague lo que le corresponde.',
-    gradient: 'from-violet-400 to-violet-600',
-  },
-];
-
 export default function QuienesSomosPage() {
   return (
     <>
       {/* Hero */}
-      <section className="gradient-bg pt-32 pb-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative overflow-hidden gradient-bg pt-36 pb-24 px-4 md:px-8">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-brand-500/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent-400/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-3.5 py-1.5 rounded-full mb-6">
-              <UsersIcon />
+            <div className="section-tag mb-6">
+              <UsersIcon size={16} />
               El equipo
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-neutral-900 leading-tight mb-5">
-              Hacemos la energía más <span className="text-gradient">simple para todos</span>
+            <h1 className="text-[56px] md:text-[72px] font-extrabold text-neutral-900 leading-[1.08] tracking-tight mb-6">
+              Hacemos la energía{' '}<span className="text-gradient">más simple para todos</span>
             </h1>
-            <p className="text-xl text-neutral-500 leading-relaxed">
+            <p className="text-xl text-neutral-500 leading-relaxed max-w-2xl">
               Somos un equipo especializado en gestión energética con una misión clara: que ninguna persona pague de más en su factura de luz o gas por no saber cómo gestionar su contrato.
             </p>
           </div>
@@ -123,8 +101,8 @@ export default function QuienesSomosPage() {
               <div className="inline-flex items-center gap-2 text-sm font-semibold text-electric-700 bg-electric-50 border border-electric-100 px-3.5 py-1.5 rounded-full mb-6">
                 Nuestra misión
               </div>
-              <h2 className="text-4xl font-bold text-neutral-900 mb-5 leading-tight">
-                El sector energético es complejo. Nosotros lo simplificamos.
+              <h2 className="text-4xl font-extrabold tracking-tight text-neutral-900 mb-5 leading-tight">
+                El sector energético es complejo. Nosotros lo <span className="text-gradient">simplificamos.</span>
               </h2>
               <p className="text-neutral-500 leading-relaxed mb-5">
                 Las facturas de luz y gas son, para la mayoría de personas, un documento incomprensible. Términos como "término de potencia", "peaje de acceso" o "discriminación horaria" alejan a los consumidores de decisiones que les afectan directamente en el bolsillo.
@@ -165,7 +143,7 @@ export default function QuienesSomosPage() {
             <div className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-3.5 py-1.5 rounded-full mb-5">
               Nuestros valores
             </div>
-            <h2 className="text-4xl font-bold text-neutral-900">Cómo trabajamos</h2>
+            <h2 className="text-4xl font-extrabold tracking-tight text-neutral-900">Cómo <span className="text-gradient">trabajamos</span></h2>
             <p className="text-neutral-500 mt-4 max-w-xl mx-auto">
               Cuatro principios que guían cada gestión, cada llamada y cada decisión que tomamos.
             </p>
@@ -185,52 +163,46 @@ export default function QuienesSomosPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 px-4 md:px-8 bg-white">
+      {/* El Equipo y Contacto */}
+      <section className="py-20 px-4 md:px-8 bg-white border-t border-neutral-100">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-3.5 py-1.5 rounded-full mb-5">
-              El equipo
-            </div>
-            <h2 className="text-4xl font-bold text-neutral-900">Personas reales, trato real</h2>
-            <p className="text-neutral-500 mt-4 max-w-xl mx-auto">
-              No somos un bot ni un sistema automatizado. Somos personas con nombres, conocimientos y el compromiso de resolver tu gestión.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {team.map(m => (
-              <div key={m.name} className="card-base text-center">
-                <div className={`w-16 h-16 bg-gradient-to-br ${m.gradient} rounded-3xl flex items-center justify-center text-white text-xl font-bold mx-auto mb-5 shadow-soft`}>
-                  {m.initials}
-                </div>
-                <h3 className="font-bold text-neutral-900 text-lg">{m.name}</h3>
-                <p className="text-sm text-brand-600 font-medium mb-3">{m.role}</p>
-                <p className="text-sm text-neutral-500 leading-relaxed">{m.desc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            
+            {/* Columna izquierda: Información del equipo */}
+            <div className="text-center md:text-left">
+              <div className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-3.5 py-1.5 rounded-full mb-6">
+                <UsersIcon />
+                El equipo
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+              <h2 className="text-4xl font-extrabold text-neutral-900 leading-tight mb-5">
+                Personas reales,<br />
+                <span className="text-gradient">trato real.</span>
+              </h2>
+              <p className="text-neutral-500 leading-relaxed max-w-md mx-auto md:mx-0">
+                No somos un bot ni un sistema automatizado. Somos personas con nombres, conocimientos y el compromiso de resolver tu gestión de forma directa y cercana.
+              </p>
+            </div>
 
-      {/* CTA */}
-      <section className="py-20 px-4 md:px-8 gradient-bg border-t border-neutral-100">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-            ¿Quieres conocernos mejor antes de empezar?
-          </h2>
-          <p className="text-neutral-500 mb-8">
-            Escríbenos o llámanos. Estaremos encantados de contarte cómo podemos ayudarte sin ningún compromiso.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contacto" className="btn-primary px-7 py-4">
-              <ZapIcon size={18} />
-              Hablar con el equipo
-            </Link>
-            <Link href="/servicios" className="btn-secondary px-7 py-4">
-              Ver servicios
-              <ArrowRightIcon />
-            </Link>
+            {/* Columna derecha: Call to Action */}
+            <div className="bg-neutral-50 rounded-4xl p-8 md:p-10 border border-neutral-100 text-center md:text-left shadow-soft">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                ¿Quieres conocernos mejor antes de empezar?
+              </h3>
+              <p className="text-neutral-500 text-sm leading-relaxed mb-8">
+                Escríbenos o llámanos. Estaremos encantados de contarte cómo podemos ayudarte a reducir tus facturas de luz sin ningún compromiso.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <Link href="/contacto" className="btn-primary px-7 py-4 w-full sm:w-auto justify-center">
+                  <ZapIcon size={18} />
+                  Hablar con el equipo
+                </Link>
+                <Link href="/soluciones" className="btn-secondary px-7 py-4 w-full sm:w-auto justify-center">
+                  Ver servicios
+                  <ArrowRightIcon />
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
