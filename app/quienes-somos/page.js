@@ -83,10 +83,10 @@ export default function QuienesSomosPage() {
               <UsersIcon size={16} />
               El equipo
             </div>
-            <h1 className="text-[56px] md:text-[72px] font-extrabold text-neutral-900 leading-[1.08] tracking-tight mb-6">
+            <h1 className="text-[34px] sm:text-[44px] md:text-[64px] font-extrabold text-neutral-900 leading-[1.08] tracking-tight mb-6">
               Hacemos la energía{' '}<span className="text-gradient">más simple para todos</span>
             </h1>
-            <p className="text-xl text-neutral-500 leading-relaxed max-w-2xl">
+            <p className="text-lg md:text-xl text-neutral-500 leading-relaxed max-w-2xl">
               Somos un equipo especializado en gestión energética con una misión clara: que ninguna persona pague de más en su factura de luz o gas por no saber cómo gestionar su contrato.
             </p>
           </div>

@@ -3,7 +3,6 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 import Navbar from '@/components/ui/Navbar';
 import Footer from '@/components/ui/Footer';
 import CookieBanner from '@/components/ui/CookieBanner';
-import WhatsAppBubble from '@/components/ui/WhatsAppBubble';
 
 // next/font descarga y sirve la fuente localmente en build-time:
 // sin peticiones externas en runtime, con preload automático → LCP óptimo
@@ -164,7 +163,6 @@ export default function RootLayout({ children }) {
         <main className="min-h-screen">{children}</main>
         <Footer />
         <CookieBanner />
-        <WhatsAppBubble />
       </body>
     </html>
   );

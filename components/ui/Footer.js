@@ -40,9 +40,9 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-950 text-neutral-400 border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-4 md:px-8 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="sm:col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-5">
               <div className="w-[36px] h-[36px] relative shrink-0">
                 <Image

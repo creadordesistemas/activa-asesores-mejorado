@@ -31,11 +31,9 @@ const SearchIcon = ({ size = 22 }) => (
     <line x1="21" y1="21" x2="16.65" y2="16.65"/>
   </svg>
 );
-const HelpIcon = ({ size = 22 }) => (
+const StarIcon = ({ size = 22 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10"/>
-    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-    <line x1="12" y1="17" x2="12.01" y2="17"/>
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" />
   </svg>
 );
 const CheckIcon = () => (
@@ -128,7 +126,7 @@ const solutions = [
     link: '/gestiones/subida-potencia-luz',
   },
   {
-    icon: <HelpIcon size={28} />,
+    icon: <StarIcon size={28} />,
     iconBg: 'bg-orange-50',
     iconColor: 'text-orange-500',
     title: 'Mejora de Condiciones del Contrato',
@@ -151,7 +149,7 @@ export default function SolucionesPage() {
   return (
     <>
       {/* Hero Header */}
-      <section className="relative overflow-hidden gradient-bg pt-32 pb-20 px-4 md:px-8">
+      <section className="relative overflow-hidden gradient-bg pt-32 pb-16 md:pb-20 px-4 md:px-8">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-radial from-brand-200/20 via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-6xl mx-auto relative">
           <div className="max-w-3xl">
@@ -181,13 +179,13 @@ export default function SolucionesPage() {
               }`}
             >
               {/* Left Color Panel */}
-              <div className={`md:w-64 lg:w-72 shrink-0 ${s.iconBg} flex flex-col items-center justify-center p-10 relative overflow-hidden`}>
-                <div className={`w-20 h-20 rounded-3xl bg-white/80 backdrop-blur-sm ${s.iconColor} flex items-center justify-center shadow-soft relative z-10 mb-4`}>
+              <div className={`md:w-64 lg:w-72 shrink-0 ${s.iconBg} flex flex-col items-center justify-center p-6 md:p-10 relative overflow-hidden`}>
+                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-3xl bg-white/80 backdrop-blur-sm ${s.iconColor} flex items-center justify-center shadow-soft relative z-10 mb-3 md:mb-4`}>
                   {s.icon}
                 </div>
                 <div className="relative z-10 text-center">
                   <span className="text-xs font-bold text-neutral-400 uppercase tracking-wider block mb-0.5">Precio</span>
-                  <span className={`text-lg font-extrabold ${s.iconColor}`}>{s.price}</span>
+                  <span className={`text-base md:text-lg font-extrabold ${s.iconColor}`}>{s.price}</span>
                 </div>
               </div>
 

@@ -278,14 +278,14 @@ export default function HomePage() {
               </div>
 
               {/* Headline */}
-              <h1 className="text-[60px] md:text-[80px] font-extrabold text-neutral-900 leading-[1.02] tracking-tight mb-7 animate-fade-up animate-delay-100 text-center md:text-left">
+              <h1 className="text-[44px] md:text-[80px] font-extrabold text-neutral-900 leading-[1.05] md:leading-[1.02] tracking-tight mb-7 animate-fade-up animate-delay-100 text-center md:text-left">
                 {/* Versión móvil: 3 líneas */}
-                <span className="md:hidden">
-                  <span className="block">Tu factura</span>
-                  <span className="block">
-                    de <span className="text-gradient">Luz</span> y <span className="text-gradient">Gas</span>
+                <span className="md:hidden block">
+                  <span className="block text-[44px] font-bold text-neutral-900 leading-[1.1] tracking-tight">Tu factura</span>
+                  <span className="block my-1 text-[36px] font-semibold text-neutral-600 leading-none">
+                    de <span className="text-gradient text-[54px] font-extrabold tracking-tight">Luz</span> y <span className="text-gradient text-[54px] font-extrabold tracking-tight">Gas</span>
                   </span>
-                  <span className="block">optimizada.</span>
+                  <span className="block text-[44px] font-bold text-neutral-900 leading-[1.1] tracking-tight">optimizada.</span>
                 </span>
                 {/* Versión desktop: layout original, gradiente en Luz y Gas */}
                 <span className="hidden md:block">
@@ -488,7 +488,7 @@ export default function HomePage() {
 
             {/* Copy */}
             <div className="md:pt-16 text-center md:text-left">
-              <h2 className="text-[38px] font-extrabold text-neutral-900 leading-[1.1] tracking-tight mb-6 text-center md:text-left">
+              <h2 className="text-[30px] sm:text-[34px] md:text-[38px] font-extrabold text-neutral-900 leading-[1.1] tracking-tight mb-6 text-center md:text-left">
                 Energía gestionada.<br />
                 <span className="text-gradient">Facturas reducidas.</span>
               </h2>
@@ -529,7 +529,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 text-center md:text-left">
-              <h2 className="text-[38px] font-extrabold text-neutral-900 leading-[1.1] tracking-tight max-w-md mx-auto md:mx-0">
+              <h2 className="text-[30px] sm:text-[34px] md:text-[38px] font-extrabold text-neutral-900 leading-[1.1] tracking-tight max-w-md mx-auto md:mx-0">
                 ¿En qué podemos <span className="text-gradient">ayudarte?</span>
               </h2>
               <Link
@@ -600,7 +600,7 @@ export default function HomePage() {
             <div className="section-tag mb-5 mx-auto">
               Proceso
             </div>
-            <h2 className="text-[38px] font-extrabold text-neutral-900 leading-[1.1] tracking-tight max-w-lg mx-auto">
+            <h2 className="text-[30px] sm:text-[34px] md:text-[38px] font-extrabold text-neutral-900 leading-[1.1] tracking-tight max-w-lg mx-auto">
               Empezar a <span className="text-gradient">ahorrar</span> es más fácil de lo que crees
             </h2>
           </div>
@@ -655,7 +655,7 @@ export default function HomePage() {
                 </span>
               </div>
             </div>
-            <h2 className="text-[38px] font-extrabold text-white leading-[1.1] tracking-tight max-w-md mx-auto md:mx-0">
+            <h2 className="text-[30px] sm:text-[34px] md:text-[38px] font-extrabold text-white leading-[1.1] tracking-tight max-w-md mx-auto md:mx-0">
               Lo que dicen nuestros <span className="text-gradient">clientes</span>
             </h2>
             {/* Indicador de reseñas de Google – solo móvil */}
@@ -758,7 +758,7 @@ export default function HomePage() {
                   </span>
                 </div>
               </div>
-              <h2 className="text-[44px] md:text-[52px] font-extrabold text-neutral-900 leading-[1.06] tracking-tight mb-6">
+              <h2 className="text-[34px] sm:text-[40px] md:text-[52px] font-extrabold text-neutral-900 leading-[1.06] tracking-tight mb-6">
                 Paga menos por<br />
                 <span className="text-gradient">la misma luz.</span>
               </h2>

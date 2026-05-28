@@ -123,7 +123,7 @@ export default function EnergiaPage() {
   return (
     <>
       {/* ── HERO ────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden gradient-bg pt-36 pb-24 px-4 md:px-8">
+      <section className="relative overflow-hidden gradient-bg pt-36 pb-20 md:pb-24 px-4 md:px-8">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-brand-500/8 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent-400/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -137,11 +137,11 @@ export default function EnergiaPage() {
               <LightbulbIcon size={16} />
               Sección de Energía
             </div>
-            <h1 className="text-[56px] md:text-[72px] font-extrabold text-neutral-900 leading-[1.08] mb-6">
+            <h1 className="text-[34px] sm:text-[44px] md:text-[64px] font-extrabold text-neutral-900 leading-[1.08] mb-6 tracking-tight">
               Soluciones Energéticas{' '}
               <span className="text-gradient-blue">Inteligentes</span>
             </h1>
-            <p className="text-xl text-neutral-500 leading-relaxed max-w-2xl">
+            <p className="text-lg md:text-xl text-neutral-500 leading-relaxed max-w-2xl">
               En Activa Asesores te ofrecemos herramientas interactivas y asesoramiento personalizado sin coste alguno. Nuestro objetivo es que tomes el control de tu gasto eléctrico, pagando lo mínimo.
             </p>
           </div>
@@ -294,10 +294,10 @@ export default function EnergiaPage() {
       </section>
 
       {/* ── CTA FINAL ─────────────────────────────────────────────────── */}
-      <section className="py-20 px-4 md:px-8 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1A5FAD 0%, #1e3a8a 100%)' }}>
+      <section className="py-20 px-4 md:px-8 relative overflow-hidden"        style={{ background: 'linear-gradient(135deg, #1A5FAD 0%, #1e3a8a 100%)' }}>
         <div className="absolute top-0 right-0 w-80 h-80 bg-accent-400/20 rounded-full blur-3xl" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">¿Quieres empezar a ahorrar hoy mismo?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">¿Quieres empezar a ahorrar hoy mismo?</h2>
           <p className="text-blue-100 text-base mb-8 max-w-xl mx-auto">
             Llámanos gratis de lunes a viernes de 8:00 a 20:00. Analizaremos tu factura de luz en menos de 10 minutos.
           </p>

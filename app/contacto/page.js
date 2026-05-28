@@ -71,7 +71,7 @@ export default function ContactoPage() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden gradient-bg pt-36 pb-20 px-4 md:px-8">
+      <section className="relative overflow-hidden gradient-bg pt-36 pb-16 md:pb-20 px-4 md:px-8">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-brand-500/8 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent-400/8 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-2xl mx-auto text-center relative z-10">
@@ -79,11 +79,11 @@ export default function ContactoPage() {
             <ZapIcon />
             Análisis gratuito
           </div>
-          <h1 className="text-[56px] md:text-[72px] font-extrabold text-neutral-900 leading-[1.08] tracking-tight mb-6">
+          <h1 className="text-[34px] sm:text-[44px] md:text-[64px] font-extrabold text-neutral-900 leading-[1.08] tracking-tight mb-6">
             Cuéntanos tu situación.<br className="hidden sm:inline" />
             <span className="text-gradient">Nosotros te respondemos.</span>
           </h1>
-          <p className="text-xl text-neutral-500 leading-relaxed">
+          <p className="text-lg md:text-xl text-neutral-500 leading-relaxed">
             Sin formularios interminables ni llamadas comerciales. Solo dinos qué necesitas y te daremos una respuesta honesta y sin compromiso.
           </p>
         </div>
